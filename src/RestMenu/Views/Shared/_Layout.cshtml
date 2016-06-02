@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - RestMenu</title>
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <div class="navbar-wrapper">
+        <div class="container">
+            <nav class="navbar navbar-inverse navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="~/Home/Index">TechPlayGround</a>
+                    </div>
+
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Azure<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="~/Azure/WebRole">WebRole</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">WorkRole</a></li>
+                                    @*<li class="dropdown-header">Nav header</li>*@
+                                </ul>
+                            </li>
+                            <li><a href="#">AWS</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FrontEnd<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="~/FrontEnd/Material">Materials</a></li>
+                                    <li><a href="~/FrontEnd/AngularJs">Angular</a></li>
+                                    <li><a href="#">BootStrap</a></li>
+                                    <li><a href="#">JQuery</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    @*<li class="dropdown-header">Nav header</li>*@
+                                    <li><a href="#">Something Else</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">DataBase</a></li>
+                            <li><a href="~/InterviewCode/LeetCode">InterviewCode</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="https://github.com/hewei8829">MyGitHub</a></li>
+                            @*<li><a href="#">HelpInNeighborhood </a></li>
+                                <li><a href="#">ApiManagement</a></li>*@
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    @RenderBody()
+
+    <environment names="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/lib/angular.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.4.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+        </script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"
+                asp-fallback-src ="~/lib/angular.min.js"
+                asp-fallback-test ="window.angular">
+
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("scripts", required: false)
+</body>   
+</html>
