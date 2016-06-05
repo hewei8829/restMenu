@@ -1,114 +1,279 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+    <div class="container marketing">
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="~/images/ASP-NET-Banners-01.png" alt="ASP.NET" class="img-responsive" />
-            <div class="carousel-caption">
-                <p>
-                    Learn how to build ASP.NET apps that can run anywhere.
-                    <a class="btn btn-default btn-default" href="http://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="~/images/FoodRecommended.jpg" alt="Recommendation" class="img-responsive" />
+                    <div class="carousel-caption">
+                        <p>
+                            <font color="blue">Daily recommendation for food.</font>
+                            <a class="btn btn-default btn-default" href="~/Home/Index">
+                                Learn More
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/images/FoodSpecialOffer.jpg" alt="Special Offer" class="img-responsive" />
+                    <div class="carousel-caption">
+                        <p>
+                            <font color="blue">Daily Sepcial offer.</font>
+                            <a class="btn btn-default btn-default" href="~/Home/Index">
+                                Learn More
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/images/FoodTopRated.png" alt="Top rated" class="img-responsive" />
+                    <div class="carousel-caption">
+                        <p>
+                            <font color="blue">Top rated restaurant</font>
+                            <a class="btn btn-default btn-default" href="~/Home/Index">
+                                Learn More
+                            </a>
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="item">
-            <img src="~/images/Banner-02-VS.png" alt="Visual Studio" class="img-responsive" />
-            <div class="carousel-caption">
-                <p>
-                    There are powerful new features in Visual Studio for building modern web apps.
-                    <a class="btn btn-default btn-default" href="http://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/ASP-NET-Banners-02.png" alt="Package Management" class="img-responsive" />
-            <div class="carousel-caption">
-                <p>
-                    Bring in libraries from NuGet, Bower, and npm, and automate tasks using Grunt or Gulp.
-                    <a class="btn btn-default btn-default" href="http://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/Banner-01-Azure.png" alt="Microsoft Azure" class="img-responsive" />
-            <div class="carousel-caption">
-                <p>
-                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
-                    <a class="btn btn-default btn-default" href="http://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
-<div ng-app="">
-    <p>Name:<input type="text" ng-model="name"></p>
-    <h1> Hello {{name}}</h1>
-</div>
+    <div class="container marketing">
+        <h2><font color="Red">Find best food in Seattle</font></h2>
+        <div class="tabbable" >
+            <ul class="nav  nav-pills  nav-stacked col-md-3">
+                <li class="active" role="presentation"><a href="#lA" data-toggle="tab">Restaurants</a></li>
+                <li><a href="#lB" data-toggle="tab">Deals</a></li>
+                <li><a href="#lC" data-toggle="tab">Events</a></li>
+                <li><a href="#lD" data-toggle="tab">Comming Soon</a></li>
+                <li><a href="#lE" data-toggle="tab">Comming Soon</a></li>
+                <li><a href="#lF" data-toggle="tab">Comming Soon</a></li>
+                <li><a href="#lG" data-toggle="tab">Comming Soon</a></li>
+                <li style="height:2000px;"></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="lA">
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <section id="premium-themes" class="doc-section">
+                        <div class="jumbotron">
+                            <h1><i class="fa fa-twitter"></i> Themes built with Twitter Bootstrap</h1>
+                            <p>You can use this page layout to showcase how other people are using your projects. Below is a list of UX-centred Bootstrap themes I made for developers.</p>
+                            <a class="scrollto btn btn-blue btn-cta" href="#theme-start">Explore Now</a>
+                        </div><!--//jumbotron-->
+                        <h2 id="theme-start" class="section-title">Premium Themes</h2>
+                        <div class="section-block">
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="card">
+                                        <a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/" target="_blank"><img class="img-responsive" src="assets/images/demo/theme-velocity.png" alt="screenshot" /></a>
+                                        <div class="card-block">
+                                            <h4 class="card-title">Velocity</h4>
+                                            <p class="card-text">Designed for Products</p>
+                                        </div><!--//card-block-->
+                                        <a class="mask" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/" target="_blank"><i class="icon fa fa-search-plus"></i></a>
+                                    </div><!--//card-->
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="card">
+                                        <a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-startups-tempo/" target="_blank"><img class="img-responsive" src="assets/images/demo/theme-tempo.png" alt="screenshot" /></a>
+                                        <div class="card-block">
+                                            <h4 class="card-title">Tempo</h4>
+                                            <p class="card-text">Designed for Startups</p>
+                                        </div><!--//card-block-->
+                                        <a class="mask" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-startups-tempo/" target="_blank"><i class="icon fa fa-search-plus"></i></a>
+                                    </div><!--//card-->
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="card">
+                                        <a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/" target="_blank"><img class="img-responsive" src="assets/images/demo/theme-devstudio.png" alt="screenshot" /></a>
+                                        <div class="card-block">
+                                            <h4 class="card-title">DevStudio</h4>
+                                            <p class="card-text">Designed for Web Development Agencies</p>
+                                        </div><!--//card-block-->
+                                        <a class="mask" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/" target="_blank"><i class="icon fa fa-search-plus"></i></a>
+                                    </div><!--//card-->
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="card">
+                                        <a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank"><img class="img-responsive" src="assets/images/demo/theme-atom.png" alt="screenshot" /></a>
+                                        <div class="card-block">
+                                            <h4 class="card-title">Atom</h4>
+                                            <p class="card-text">Designed for App Startups</p>
+                                        </div><!--//card-block-->
+                                        <a class="mask" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank"><i class="icon fa fa-search-plus"></i></a>
+                                    </div><!--//card-->
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="card">
+                                        <a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/" target="_blank"><img class="img-responsive" src="assets/images/demo/theme-delta.png" alt="screenshot" /></a>
+                                        <div class="card-block">
+                                            <h4 class="card-title">Delta</h4>
+                                            <p class="card-text">Designed for Mobile Apps</p>
+                                        </div><!--//card-block-->
+                                        <a class="mask" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/" target="_blank"><i class="icon fa fa-search-plus"></i></a>
+                                    </div><!--//card-->
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="card">
+                                        <a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-template-builders-tradesmen-trades/" target="_blank"><img class="img-responsive" src="assets/images/demo/theme-trades.png" alt="screenshot" /></a>
+                                        <div class="card-block">
+                                            <h4 class="card-title">Trades</h4>
+                                            <p class="card-text">Designed for Builders</p>
+                                        </div><!--//card-block-->
+                                        <a class="mask" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-template-builders-tradesmen-trades/" target="_blank"><i class="icon fa fa-search-plus"></i></a>
+                                    </div><!--//card-->
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="card">
+                                        <a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-restaurants-epicure/" target="_blank"><img class="img-responsive" src="assets/images/demo/theme-epicure.png" alt="screenshot" /></a>
+                                        <div class="card-block">
+                                            <h4 class="card-title">Epicure</h4>
+                                            <p class="card-text">Designed for Restaurants</p>
+                                        </div><!--//card-block-->
+                                        <a class="mask" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-restaurants-epicure/" target="_blank"><i class="icon fa fa-search-plus"></i></a>
+                                    </div><!--//card-->
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="card">
+                                        <a href="http://themes.3rdwavemedia.com/website-templates/responsive-wedding-invitation-template-matrimony/" target="_blank"><img class="img-responsive" src="assets/images/demo/theme-matrimony.png" alt="screenshot" /></a>
+                                        <div class="card-block">
+                                            <h4 class="card-title">Matrimony</h4>
+                                            <p class="card-text">Designed for Weddings</p>
+                                        </div><!--//card-block-->
+                                        <a class="mask" href="http://themes.3rdwavemedia.com/website-templates/responsive-wedding-invitation-template-matrimony/" target="_blank"><i class="icon fa fa-search-plus"></i></a>
+                                    </div><!--//card-->
+                                </div>
 
-@*<div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET MVC 6</li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=518007">Gulp</a> and <a href="http://go.microsoft.com/fwlink/?LinkId=518004">Bower</a> for managing client-side libraries</li>
-            <li>Theming using <a href="http://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-        </ul>
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="card">
+                                        <a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-template-for-bands-and-musicians-decibel/" target="_blank"><img class="img-responsive" src="assets/images/demo/theme-decibel.png" alt="screenshot" /></a>
+                                        <div class="card-block">
+                                            <h4 class="card-title">Decibel</h4>
+                                            <p class="card-text">Designed for Bands</p>
+                                        </div><!--//card-block-->
+                                        <a class="mask" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-template-for-bands-and-musicians-decibel/" target="_blank"><i class="icon fa fa-search-plus"></i></a>
+                                    </div><!--//card-->
+                                </div>
+
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="card">
+                                        <a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-template-for-crowdfunding-campaigns-onboard/" target="_blank"><img class="img-responsive" src="assets/images/demo/theme-onboard.png" alt="screenshot" /></a>
+                                        <div class="card-block">
+                                            <h4 class="card-title">Onboard</h4>
+                                            <p class="card-text">Designed for Crowdfunding</p>
+                                        </div><!--//card-block-->
+                                        <a class="mask" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-template-for-crowdfunding-campaigns-onboard/" target="_blank"><i class="icon fa fa-search-plus"></i></a>
+                                    </div><!--//card-->
+                                </div>
+
+                            </div><!--//row-->
+                        </div><!--//section-block-->
+                    </section><!--//doc-section-->
+
+                </div>
+                <div class="tab-pane fade" id="lB">
+                    <figure class="highlight">
+                        <pre>  Azure Ad. I will try to add Azure Active Directory in Code Reivew Section. To be honest, I don't like the settings of Azure AD. I have a feelling that it is made for enterprise managment the settings are too complex. Hope Microsoft can improve this product. 
+                        </pre>
+                        <a class="btn btn-primary btn-sm" href="https://azure.microsoft.com/en-us/documentation/services/active-directory/" role="button">Azure AD Document</a>
+                        <p></p>
+                        <pre>  Web API Code sample is a good start. Some of other samples are hard to understand. 
+                        </pre>
+                        <a class="btn btn-primary btn-sm" href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-devquickstarts-webapi-dotnet/" role="button">Web API</a>
+                        <p></p>
+                        <pre>  New Project is using .net 4.6.2 and they change the nuget managment. Here is how I add the angularjs into my new project. It looks more complicated. But they said it will have some benefits later.
+                        </pre>
+                        <a class="btn btn-primary btn-sm" href="https://www.pluralsight.com/blog/software-development/angularjs-for-asp-net-applications" role="button">.Net5 Nuget</a>
+                    </figure>
+                </div>
+                <div class="tab-pane fade" id="lC">
+                    <figure class="highlight">
+                        <pre></pre>
+                    </figure>
+                    <p>Section C.</p>
+                </div>
+                <div class="tab-pane fade" id="lD">
+                    <figure class="highlight">
+                        <pre></pre>
+                    </figure>
+                    <p>Section D.</p>
+                </div>
+                <div class="tab-pane fade" id="lE">
+                    <figure class="highlight">
+                        <pre></pre>
+                    </figure>
+                    <p>Section E.</p>
+                </div>
+                <div class="tab-pane fade" id="lF">
+                    <figure class="highlight">
+                        <pre></pre>
+                    </figure>
+                    <p>Section F.</p>
+                </div>
+            </div>
+        </div> <!-- /tabbable -->
     </div>
-    <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=699314">Add an appsetting in config and access it in app.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699318">Add client packages using Bower.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET 5</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET 5 such as Startup and middleware.</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Run & Deploy</h2>
-        <ul>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=517852">Run your app on .NET Core</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=517853">Run commands in your project.json</a></li>
-            <li><a href="http://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
-        </ul>
-    </div>
-</div>*@
+    @*<div class="row">
+            <div class="col-md-3">
+                <h2>Application uses</h2>
+                <ul>
+                    <li>Sample pages using ASP.NET MVC 6</li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=518007">Gulp</a> and <a href="http://go.microsoft.com/fwlink/?LinkId=518004">Bower</a> for managing client-side libraries</li>
+                    <li>Theming using <a href="http://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h2>How to</h2>
+                <ul>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkID=699314">Add an appsetting in config and access it in app.</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=699318">Add client packages using Bower.</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h2>Overview</h2>
+                <ul>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET 5</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET 5 such as Startup and middleware.</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h2>Run & Deploy</h2>
+                <ul>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkID=517852">Run your app on .NET Core</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkID=517853">Run commands in your project.json</a></li>
+                    <li><a href="http://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
+                </ul>
+            </div>
+        </div>*@
