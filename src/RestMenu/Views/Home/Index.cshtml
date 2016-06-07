@@ -234,6 +234,18 @@
             </div>
         </div> <!-- /tabbable -->
     </div>
+
+<div ng-app="">
+    <p>Name:<input type="text" ng-model="name"></p>
+    <h1> Hello {{name}}</h1>
+</div>
+
+<div id="simple" ng-controller="MyController">
+    <p>Let's try this simple notify service, injected into the controller...</p>
+    <input ng-init="message='test'" ng-model="message">
+    <button ng-click="callNotify(message);">NOTIFY</button>
+    <p>(you have to click 3 times to see an alert)</p>
+</div>
     @*<div class="row">
             <div class="col-md-3">
                 <h2>Application uses</h2>
